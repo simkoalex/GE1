@@ -2,6 +2,7 @@
 
 
 #include "MyPawn.h"
+#include <Kismet/KismetSystemLibrary.h>
 
 // Sets default values
 AMyPawn::AMyPawn()
@@ -15,7 +16,7 @@ AMyPawn::AMyPawn()
 void AMyPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	UKismetSystemLibrary::PrintString(this, TEXT("Hello World!"));
 }
 
 // Called every frame
